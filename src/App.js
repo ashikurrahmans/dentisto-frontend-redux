@@ -11,6 +11,7 @@ import Footer from "./Components/Footer/Footer";
 import Login from "./Components/Login/Login";
 import Registration from "./Components/Login/Registration";
 import ForgetPassword from "./Components/Login/ForgetPassword";
+import ServiceDetails from "./Components/Services/ServiceDetails";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/service/:id" element={<ServiceDetails />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<Login />} />
