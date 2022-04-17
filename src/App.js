@@ -6,12 +6,12 @@ import About from "./Components/About/About";
 import Contact from "./Components/Contact/Contact";
 import NotFound404 from "./Components/404/NotFound404";
 import Services from "./Components/Services/Services";
-import Portfolio from "./Components/Portfolio/Portfolio";
 import Footer from "./Components/Footer/Footer";
 import Login from "./Components/Login/Login";
 import Registration from "./Components/Login/Registration";
 import ForgetPassword from "./Components/Login/ForgetPassword";
 import ServiceDetails from "./Components/Services/ServiceDetails";
+import Blog from "./Components/Blog/Blog";
 
 function App() {
   return (
@@ -21,8 +21,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/blog" element={<Blog />} />
         <Route path="/service/:id" element={<ServiceDetails />} />
-        <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<Login />} />
         <Route path="/registration" element={<Registration />} />

@@ -1,6 +1,10 @@
 import React, { useEffect, useRef } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import auth from "./../../Firebase.init";
+
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 import {
   useAuthState,
   useSignInWithEmailAndPassword,
@@ -35,6 +39,7 @@ const Login = () => {
     const email = emailRef.current.value;
     const password = passwordRef.current.value;
     signInWithEmailAndPassword(email, password);
+    toast("You are loged In");
   };
 
   // Navigating(Redirect) After Login
@@ -116,6 +121,7 @@ const Login = () => {
             Sign with Github
           </button>
         </div>
+        <ToastContainer></ToastContainer>
       </div>
     </section>
   );

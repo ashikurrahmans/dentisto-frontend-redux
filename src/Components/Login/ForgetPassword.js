@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import auth from "./../../Firebase.init";
 import { useSendPasswordResetEmail } from "react-firebase-hooks/auth";
+import { toast, ToastContainer } from "react-toastify";
 
 const ForgetPassword = () => {
   const emailRef = useRef("");
@@ -11,8 +12,12 @@ const ForgetPassword = () => {
   const resetPasswordHandle = async (event) => {
     event.preventDefault();
     const email = emailRef.current.value;
-    await sendPasswordResetEmail(email);
-    emailRef.current.value = "";
+    if (email) {
+      await sendPasswordResetEmail(email);
+      toast("Email Sended...");
+    } else {
+      toast("Please provide your email address.");
+    }
   };
 
   let emailError;
@@ -49,6 +54,7 @@ const ForgetPassword = () => {
             </Link>
           </p>
         </div>
+        <ToastContainer></ToastContainer>
       </div>
     </section>
   );

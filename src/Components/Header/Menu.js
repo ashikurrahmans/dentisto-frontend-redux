@@ -44,10 +44,10 @@ const Menu = () => {
                   Services
                 </Link>
                 <Link
-                  to="/portfolio"
+                  to="/blog"
                   className="py-4 px-3 text-lg text-gray-500 font-bold hover:text-green-500 transition duration-300"
                 >
-                  Portfolio
+                  Blog
                 </Link>
                 <Link
                   to="/about"
