@@ -12,7 +12,7 @@ const Contact = () => {
             <div className="flex flex-col mb-4">
               <label
                 className="mb-2 font-bold text-lg text-gray-900"
-                for="first_name"
+                htmlFor="first_name"
               >
                 Full Name :
               </label>
@@ -27,7 +27,7 @@ const Contact = () => {
             <div className="flex flex-col mb-4">
               <label
                 className="mb-2 font-bold text-lg text-gray-900"
-                for="email"
+                htmlFor="email"
               >
                 Email Address :
               </label>
@@ -41,7 +41,7 @@ const Contact = () => {
             <div className="flex flex-col mb-4">
               <label
                 className="mb-2 font-bold text-lg text-gray-900"
-                for="password"
+                htmlFor="password"
               >
                 Your Message :
               </label>

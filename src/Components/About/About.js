@@ -3,30 +3,30 @@ import React from "react";
 const About = () => {
   return (
     <div>
-      <div class="max-w-screen-xl px-4 mx-auto md:px-8">
-        <div class=" mx-auto w-96">
-          <div class="p-4 shadow">
-            <div class="h-48 mb-2 overflow-hidden rounded-lg shadow-lg md:h-80 mt-5">
+      <div className="max-w-screen-xl px-4 mx-auto md:px-8">
+        <div className=" mx-auto w-96">
+          <div className="p-4 shadow">
+            <div className="h-48 mb-2 overflow-hidden rounded-lg shadow-lg md:h-80 mt-5">
               <img
                 src="https://scontent.fdac136-1.fna.fbcdn.net/v/t1.6435-9/150565100_1629501413900128_4038877282322006111_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=0Jn81o4LyH4AX-QIy5i&_nc_ht=scontent.fdac136-1.fna&oh=00_AT9bnkzE8MLTIYAZlcq65mNVo1tA0AiQAfsdBeGOzukrkw&oe=628084BE"
                 alt="Image"
-                class="object-cover object-center w-full h-full"
+                className="object-cover object-center w-full h-full"
               />
             </div>
 
-            <div class="flex flex-col items-center justify-center">
-              <div class="font-bold text-indigo-500 md:text-lg">
+            <div className="flex flex-col items-center justify-center">
+              <div className="font-bold text-indigo-500 md:text-lg">
                 Ashikur Rahman
               </div>
-              <p class="mb-3 text-sm text-gray-500 md:text-base md:mb-4">
+              <p className="mb-3 text-sm text-gray-500 md:text-base md:mb-4">
                 Frontend Focus Full Stack Web developer
               </p>
 
-              <div class="flex">
-                <div class="flex gap-4">
+              <div className="flex">
+                <div className="flex gap-4">
                   <a href="https://facebook.com/ashiqur.dream">
                     <svg
-                      class="w-6 h-6 text-blue-600 fill-current"
+                      className="w-6 h-6 text-blue-600 fill-current"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
                     >
@@ -35,7 +35,7 @@ const About = () => {
                   </a>
                   <a href="https://twitter.com/ashikurrohmani">
                     <svg
-                      class="w-6 h-6 text-blue-300 fill-current"
+                      className="w-6 h-6 text-blue-300 fill-current"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
                     >
@@ -44,7 +44,7 @@ const About = () => {
                   </a>
                   <a href="https://www.linkedin.com/in/ashikurrohman/">
                     <svg
-                      class="w-6 h-6 text-blue-500 fill-current"
+                      className="w-6 h-6 text-blue-500 fill-current"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 448 512"
                     >
@@ -56,8 +56,8 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div class="mb-10 md:mb-8">
-          <p class="max-w-screen-md mx-auto text-center text-gray-500 md:text-lg">
+        <div className="mb-10 md:mb-8">
+          <p className="max-w-screen-md mx-auto text-center text-gray-500 md:text-lg">
             I have a dream to become a security engineer. over past years i
             learnt lot's of things to improve myself and go nearest to my aim.
             As a fullstack digital marketer i worked with several clients.

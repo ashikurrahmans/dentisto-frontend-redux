@@ -1,22 +1,20 @@
-import { useParams } from "react-router-dom";
-import { useEffect } from "react";
-import { useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 const ServiceDetails = () => {
   const { id } = useParams();
+  const navigate = useNavigate();
 
   const [service, setServices] = useState([]);
-  const [sDisplay, setServiceDisplay] = useState([]);
   useEffect(() => {
-    fetch("services.json")
+    fetch(
+      "https://raw.githubusercontent.com/ashikurrahmans/dentistjson/main/service"
+    )
       .then((response) => response.json())
       .then((data) => setServices(data));
   }, []);
 
-  service.filter((item) =>
-    item.id === id ? setServiceDisplay(item) : "nothing found"
-  );
-  console.log(sDisplay);
+  const fatch = service.find((item) => item.id === id);
 
   return (
     <section className="text-gray-700 body-font overflow-hidden bg-white">
@@ -25,10 +23,12 @@ const ServiceDetails = () => {
           <img
             alt="ecommerce"
             className="lg:w-1/2 w-full object-cover object-center rounded border border-gray-200"
-            src="https://www.whitmorerarebooks.com/pictures/medium/2465.jpg"
+            src={fatch?.img}
           />
           <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
-            <h1 className="text-gray-900 text-3xl title-font font-medium mb-1"></h1>
+            <h1 className="text-gray-900 text-3xl title-font font-medium mb-1">
+              {fatch?.name}
+            </h1>
             <div className="flex mb-4">
               <span className="flex items-center">
                 <svg
@@ -127,20 +127,16 @@ const ServiceDetails = () => {
                 </a>
               </span>
             </div>
-            <p className="leading-relaxed">
-              Fam locavore kickstarter distillery. Mixtape chillwave tumeric
-              sriracha taximy chia microdosing tilde DIY. XOXO fam indxgo
-              juiceramps cornhole raw denim forage brooklyn. Everyday carry +1
-              seitan poutine tumeric. Gastropub blue bottle austin listicle
-              pour-over, neutra jean shorts keytar banjo tattooed umami
-              cardigan.
-            </p>
+            <p className="leading-relaxed">{fatch?.description}</p>
 
             <div className="flex mt-16">
               <span className="title-font font-medium text-2xl text-gray-900">
-                $58.00
+                Price : ${fatch?.price}
               </span>
-              <button className="flex ml-auto text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded">
+              <button
+                onClick={() => navigate("/checkout")}
+                className="flex ml-auto text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded"
+              >
                 Checkout
               </button>
             </div>

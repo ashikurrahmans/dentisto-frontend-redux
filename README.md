@@ -1,6 +1,6 @@
 # Ashik's Dental Studio
 
-This website has been creted for an assignment to show my skills. also how can improve my self each and every day. I mentoned every how i developed this application and what stacks i use.
+This website has been creted for an assignment to show my skills. also this assignment will judge me how i improving myself each and every day. I mentoned everything how i developed this web application and what materials called stacks i use all of are mentioned below.
 
 - React (Javascript frontend Library)
 - Tailwind CSS (utility first css framwork for making the design)

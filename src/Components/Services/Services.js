@@ -4,7 +4,9 @@ import SingleService from "./SingleService";
 const Services = () => {
   const [service, setServices] = useState([]);
   useEffect(() => {
-    fetch("services.json")
+    fetch(
+      "https://raw.githubusercontent.com/ashikurrahmans/dentistjson/main/service"
+    )
       .then((response) => response.json())
       .then((data) => setServices(data));
   }, []);
