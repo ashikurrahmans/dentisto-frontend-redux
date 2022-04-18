@@ -1,4 +1,9 @@
+import { useContext } from "react";
+import { CheckOutContext } from "./ServiceDetails";
+
 const Checkout = () => {
+  const checkout = useContext(CheckOutContext);
+  console.log(checkout);
   return (
     <div>
       <div className="h-screen grid grid-cols-3 mt-5 mb-5">
@@ -14,9 +19,9 @@ const Checkout = () => {
                   stroke="currentColor"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                   />
                 </svg>
@@ -35,9 +40,9 @@ const Checkout = () => {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M6 18L18 6M6 6l12 12"
                 ></path>
               </svg>
@@ -135,7 +140,7 @@ const Checkout = () => {
                         <option value="ES">Spain</option>
                         <option value="TN">Tunisia</option>
                         <option value="GB">United Kingdom</option>
-                        <option value="US" selected="selected">
+                        <option value="US" defaultValue="US">
                           United States
                         </option>
                       </select>
