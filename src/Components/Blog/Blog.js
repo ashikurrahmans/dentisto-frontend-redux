@@ -44,15 +44,15 @@ const Blog = () => {
             >
               <div className="accordion-body py-4 px-5">
                 <p>
-                  The Context API is a React structured who gives us permission
-                  to share information one component to another. and solving a
-                  big issue called prop-drilling. React Context API is a way to
-                  share data or information effectively and less code repeating.
-                  Context API is a (kind of) new feature added in version 16.3
-                  of React that allows one to share state across the entire app
-                  (or part of it) lightly and with ease. we have to use this
-                  function React.createContext(). and has provider key to share
-                  data to own childrens.
+                  Authentication is the process of verifying the right person
+                  who is already been authenticated or not. whereas
+                  authorization is the process of verifying what specific
+                  applications, files, and data a user has access to. The
+                  situation is like that of an airline that needs to determine
+                  which people can come on board.authentication and
+                  authorization accomplish these same goals. Authentication is
+                  used to verify that users really are who they represent
+                  themselves to be.
                 </p>
               </div>
             </div>
@@ -86,7 +86,9 @@ const Blog = () => {
                 aria-expanded="true"
                 aria-controls="collapseOne"
               >
-                <strong>Why I am using instead of other option? </strong>
+                <strong>
+                  Why I am using firebase instead of other option?
+                </strong>
               </button>
             </h2>
             <div
@@ -97,15 +99,14 @@ const Blog = () => {
             >
               <div className="accordion-body py-4 px-5">
                 <p>
-                  The Context API is a React structured who gives us permission
-                  to share information one component to another. and solving a
-                  big issue called prop-drilling. React Context API is a way to
-                  share data or information effectively and less code repeating.
-                  Context API is a (kind of) new feature added in version 16.3
-                  of React that allows one to share state across the entire app
-                  (or part of it) lightly and with ease. we have to use this
-                  function React.createContext(). and has provider key to share
-                  data to own childrens.
+                  Firebase is originally developed by Firebase inc and later
+                  acquired by Google. It provides different kinds of services
+                  that help us to develop high-quality mobile and web
+                  applications to grow our businesses. Google Firebase offers
+                  many features that pitch it as the go-to backend development
+                  tool for web and mobile apps. It reduces development workload
+                  and time. And it's a perfect prototyping tool. Firebase is
+                  simple, lightweight, friendly, and industrially recognized.
                 </p>
               </div>
             </div>
@@ -153,15 +154,13 @@ const Blog = () => {
             >
               <div className="accordion-body py-4 px-5">
                 <p>
-                  The Context API is a React structured who gives us permission
-                  to share information one component to another. and solving a
-                  big issue called prop-drilling. React Context API is a way to
-                  share data or information effectively and less code repeating.
-                  Context API is a (kind of) new feature added in version 16.3
-                  of React that allows one to share state across the entire app
-                  (or part of it) lightly and with ease. we have to use this
-                  function React.createContext(). and has provider key to share
-                  data to own childrens.
+                  There are many services which Firebase provides, Most useful
+                  of them are: Cloud Firestore, Cloud Functions Authentication,
+                  Hosting Cloud Storage, Google Analytics, Predictions Cloud
+                  Messaging, Dynamic Links, Remote Config Firebase, is a full
+                  package that can help in developing your mobile or web
+                  applications faster with fewer resources and more efficiency.
+                  Now, let’s look at some of the services and use of it.
                 </p>
               </div>
             </div>
