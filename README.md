@@ -1,6 +1,6 @@
 # Ashik's Dental Studio
 
-Here is be live website link : https://dentisto.netlify.app/
+Here is the live website link : https://dentisto.netlify.app/
 
 This website has been creted for an assignment to show my skills. also this assignment will judge me how i improving myself each and every day. I mentoned everything how i developed this web application and what materials called stacks i use all of are mentioned below.
 
