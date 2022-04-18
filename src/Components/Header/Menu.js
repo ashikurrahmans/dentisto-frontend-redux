@@ -32,11 +32,7 @@ const Menu = () => {
                   };
                 }}
               >
-                <img
-                  src="https://seekvectorlogo.com/wp-content/uploads/2019/05/portfolio-plus-banking-software-vector-logo-small.png"
-                  alt="Logo"
-                  className="h-12 w-24 mr-2"
-                />
+                <h1 className="text-4xl font-bold">Ashik's</h1>
               </NavLink>
             </div>
             <div className="flex">
