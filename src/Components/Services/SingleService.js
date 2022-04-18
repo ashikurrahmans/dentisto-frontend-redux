@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 const SingleService = (props) => {
-  const { id, name, img, description } = props.service;
+  const { id, name, price, img, description } = props.service;
   const navigate = useNavigate();
   return (
     <div>
@@ -11,10 +11,12 @@ const SingleService = (props) => {
           <img className="w-96 h-64 lg:w-full lg:h-72" src={img} alt={name} />
           <div className="px-6 py-4">
             <div className="font-bold text-xl mb-2">{name}</div>
+            <div className="font-bold text-xl mb-2">Price : ${price}</div>
             <p className="text-gray-700 text-base">
               {description.slice(0, 140)}
             </p>
           </div>
+
           <div className="px-6 pt-4 pb-2">
             <button
               onClick={() => navigate(`/service/${id}`)}

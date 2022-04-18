@@ -11,6 +11,8 @@ import Login from "./Components/Login/Login";
 import Registration from "./Components/Login/Registration";
 import ForgetPassword from "./Components/Login/ForgetPassword";
 import ServiceDetails from "./Components/Services/ServiceDetails";
+import Checkout from "./Components/Services/Checkout";
+import Required from "./Components/RequiredAuth/Required";
 import Blog from "./Components/Blog/Blog";
 
 function App() {
@@ -23,6 +25,14 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/service/:id" element={<ServiceDetails />} />
+        <Route
+          path="/checkout"
+          element={
+            <Required>
+              <Checkout />
+            </Required>
+          }
+        />
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<Login />} />
         <Route path="/registration" element={<Registration />} />
