@@ -217,7 +217,7 @@ const Checkout = () => {
             </div>
           </div>
           <div className="font-semibold text-xl px-8 flex justify-between py-8 text-gray-600">
-            <span>Total : </span>
+            <span>Total : $ </span>
           </div>
         </div>
       </div>
