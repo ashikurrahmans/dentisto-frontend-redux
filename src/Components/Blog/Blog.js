@@ -1,10 +1,11 @@
 import React from "react";
-import { a } from "react-router-dom";
+import PageTitle from "../../SharedFiles/PageTitle";
 
 const Blog = () => {
   return (
     <>
       <div className="w-4/5	mt-10 mx-auto">
+        <PageTitle title="Blog"></PageTitle>
         <div className="accordion" id="accordionExample ">
           <div className="accordion-item bg-white border border-gray-200">
             <h2 className="accordion-header mb-0" id="headingOne">
@@ -44,15 +45,17 @@ const Blog = () => {
             >
               <div className="accordion-body py-4 px-5">
                 <p>
-                  Authentication is the process of verifying the right person
-                  who is already been authenticated or not. whereas
-                  authorization is the process of verifying what specific
-                  applications, files, and data a user has access to. The
-                  situation is like that of an airline that needs to determine
-                  which people can come on board.authentication and
-                  authorization accomplish these same goals. Authentication is
-                  used to verify that users really are who they represent
-                  themselves to be.
+                  A1. The most fundamental yet crucial difference between JS and
+                  Node JS is that JavaScript is a programming language that is
+                  used to write scripts, whereas Node JS is a JavaScript runtime
+                  environment that is used to develop applications. Node JS is
+                  used to establish a runtime environment that allows JavaScript
+                  code to be executed in a production environment (system where
+                  codes are built) as well as in the application (browser or any
+                  other application) where it is meant to be executed.
+                  Javascript is a programming language that can only be used in
+                  browsers, however we can execute Javascript outside of the
+                  browser with the help of NodeJS.
                 </p>
               </div>
             </div>

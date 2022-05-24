@@ -1,8 +1,10 @@
 import React from "react";
+import PageTitle from "./../../SharedFiles/PageTitle";
 
 const Contact = () => {
   return (
     <div className="mt-1 mb-20">
+      <PageTitle title="Contact"></PageTitle>
       <div className="flex justify-center items-center h-screen w-full">
         <div className="w-1/2  rounded shadow-2xl p-8 m-4">
           <h1 className="block w-full text-center text-gray-800 text-2xl font-bold mb-6">

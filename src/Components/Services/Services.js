@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import SingleService from "./SingleService";
+import PageTitle from "./../../SharedFiles/PageTitle";
 
 const Services = () => {
   const [service, setServices] = useState([]);
@@ -13,6 +14,7 @@ const Services = () => {
 
   return (
     <div className="">
+      <PageTitle title="Service"></PageTitle>
       <h1 className="text-3xl font-bold	text-center mt-6">All Services </h1>
       <div className="grid md:grid-cols-3 grid-cols-1 gap-3">
         {service.map((service) => (

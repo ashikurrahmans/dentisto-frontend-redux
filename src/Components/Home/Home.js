@@ -1,4 +1,5 @@
 import React from "react";
+import PageTitle from "../../SharedFiles/PageTitle";
 import Services from "../Services/Services";
 import Hero from "./Hero";
 
@@ -7,6 +8,7 @@ const Home = () => {
     <div>
       <Hero></Hero>
       <Services></Services>
+      <PageTitle title="Home"></PageTitle>
     </div>
   );
 };

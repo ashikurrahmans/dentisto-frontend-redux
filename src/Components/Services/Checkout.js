@@ -1,9 +1,10 @@
 import { useContext } from "react";
-import { CheckOutContext } from "./ServiceDetails";
+import { CheckOutContext } from "./../../App";
 
 const Checkout = () => {
-  const checkout = useContext(CheckOutContext);
-  console.log(checkout);
+  const [singleService, setSingleService] = useContext(CheckOutContext);
+  console.log(singleService);
+
   return (
     <div>
       <div className="h-screen grid grid-cols-3 mt-5 mb-5">
@@ -180,24 +181,24 @@ const Checkout = () => {
             <li className="grid grid-cols-6 gap-2 border-b-1">
               <div className="col-span-1 self-center">
                 <img
-                  src="https://bit.ly/3lCyoSx"
+                  src={singleService.img}
                   alt="Product"
                   className="rounded w-full"
                 />
               </div>
               <div className="flex flex-col col-span-3 pt-2">
                 <span className="text-gray-600 text-md font-semi-bold">
-                  Apple iPhone 13
+                  {singleService.name}
                 </span>
                 <span className="text-gray-400 text-sm inline-block pt-2">
-                  Phone
+                  {console.log(singleService)}
                 </span>
               </div>
               <div className="col-span-2 pt-3">
                 <div className="flex items-center space-x-2 text-sm justify-between">
-                  <span className="text-gray-400">1 x €785</span>
+                  <span className="text-gray-400">"1 x €785"</span>
                   <span className="text-pink-400 font-semibold inline-block">
-                    €785
+                    ${singleService.price}
                   </span>
                 </div>
               </div>
@@ -206,7 +207,9 @@ const Checkout = () => {
           <div className="px-8 border-b">
             <div className="flex justify-between py-4 text-gray-600">
               <span>Subtotal</span>
-              <span className="font-semibold text-pink-500">€846.98</span>
+              <span className="font-semibold text-pink-500">
+                ${singleService.price}
+              </span>
             </div>
             <div className="flex justify-between py-4 text-gray-600">
               <span>Shipping</span>

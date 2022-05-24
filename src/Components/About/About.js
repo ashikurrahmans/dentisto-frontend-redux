@@ -1,8 +1,11 @@
 import React from "react";
+import PageTitle from "./../../SharedFiles/PageTitle";
 
 const About = () => {
   return (
     <div>
+      <PageTitle title="About"></PageTitle>
+
       <div className="max-w-screen-xl px-4 mx-auto md:px-8">
         <div className=" mx-auto w-96">
           <div className="p-4 shadow">

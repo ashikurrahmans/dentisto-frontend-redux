@@ -2,7 +2,7 @@ import { signOut } from "firebase/auth";
 import React from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { NavLink, Outlet, useNavigate } from "react-router-dom";
-import auth from "../../Firebase.init";
+import auth from "./../../Firebase.init";
 
 const Menu = () => {
   const navigate = useNavigate();
@@ -61,7 +61,7 @@ const Menu = () => {
                     };
                   }}
                 >
-                  Services
+                  Inventory
                 </NavLink>
                 <NavLink
                   to="/blog"

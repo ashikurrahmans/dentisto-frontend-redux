@@ -4,6 +4,9 @@ import { useNavigate } from "react-router-dom";
 const SingleService = (props) => {
   const { id, name, price, img, description } = props.service;
   const navigate = useNavigate();
+  // const knowmoreToCheckout = () => {
+  //   navigate("/service");
+  // };
   return (
     <div>
       <div className="p-10 ">
@@ -20,6 +23,7 @@ const SingleService = (props) => {
           <div className="px-6 pt-4 pb-2">
             <button
               onClick={() => navigate(`/service/${id}`)}
+              // onClick={knowmoreToCheckout}
               type="button"
               className="text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
             >
