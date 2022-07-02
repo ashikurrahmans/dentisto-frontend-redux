@@ -7,7 +7,9 @@ const Home = () => {
   return (
     <div>
       <Hero></Hero>
-      <Services></Services>
+      <div className="w-12/12 lg:w-10/12 mx-auto">
+        <Services></Services>
+      </div>
       <PageTitle title="Home"></PageTitle>
     </div>
   );

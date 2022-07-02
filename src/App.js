@@ -15,6 +15,8 @@ import Checkout from "./Components/Services/Checkout";
 import Blog from "./Components/Blog/Blog";
 import RequiredAuth from "./Components/RequiredAuth/RequiredAuth";
 import { createContext, useState } from "react";
+import { Provider } from "react-redux";
+import store from "./Components/redux/store";
 
 export const CheckOutContext = createContext();
 
@@ -24,28 +26,30 @@ function App() {
   return (
     <div>
       <CheckOutContext.Provider value={[singleService, setSingleService]}>
-        <Menu></Menu>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/service/:id" element={<ServiceDetails />} />
-          <Route
-            path="/checkout"
-            element={
-              <RequiredAuth>
-                <Checkout />
-              </RequiredAuth>
-            }
-          />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/registration" element={<Registration />} />
-          <Route path="/forgetpassword" element={<ForgetPassword />} />
-          <Route path="*" element={<NotFound404 />} />
-        </Routes>
-        <Footer></Footer>
+        <Provider store={store}>
+          <Menu></Menu>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/service/:id" element={<ServiceDetails />} />
+            <Route
+              path="/checkout"
+              element={
+                <RequiredAuth>
+                  <Checkout />
+                </RequiredAuth>
+              }
+            />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/registration" element={<Registration />} />
+            <Route path="/forgetpassword" element={<ForgetPassword />} />
+            <Route path="*" element={<NotFound404 />} />
+          </Routes>
+          <Footer></Footer>
+        </Provider>
       </CheckOutContext.Provider>
     </div>
   );

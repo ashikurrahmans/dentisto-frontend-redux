@@ -16,10 +16,12 @@ const Services = () => {
     <div className="">
       <PageTitle title="Service"></PageTitle>
       <h1 className="text-3xl font-bold	text-center mt-6">All Services </h1>
-      <div className="grid md:grid-cols-3 grid-cols-1 gap-3">
-        {service.map((service) => (
-          <SingleService service={service} key={service.id}></SingleService>
-        ))}
+      <div className="w-10/12 mx-auto">
+        <div className="grid md:grid-cols-3 grid-cols-1 gap-2">
+          {service.map((service) => (
+            <SingleService service={service} key={service.id}></SingleService>
+          ))}
+        </div>
       </div>
       ;
     </div>
